@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FF8733FC2E4CC5570037FC08 /* mobildevSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8733F02E4CC5570037FC08 /* mobildevSDK.framework */; };
+		FF87345E2E4CCA660037FC08 /* mobildevSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8733F02E4CC5570037FC08 /* mobildevSDK.framework */; };
+		FF87345F2E4CCA660037FC08 /* mobildevSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF8733F02E4CC5570037FC08 /* mobildevSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,12 +20,60 @@
 			remoteGlobalIDString = FF8733EF2E4CC5570037FC08;
 			remoteInfo = mobildevSDK;
 		};
+		FF8734422E4CC9810037FC08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8733E72E4CC5570037FC08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF87342B2E4CC9800037FC08;
+			remoteInfo = SDKMobildevApp;
+		};
+		FF87344C2E4CC9810037FC08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8733E72E4CC5570037FC08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF87342B2E4CC9800037FC08;
+			remoteInfo = SDKMobildevApp;
+		};
+		FF8734602E4CCA660037FC08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8733E72E4CC5570037FC08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF8733EF2E4CC5570037FC08;
+			remoteInfo = mobildevSDK;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF8734622E4CCA660037FC08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF87345F2E4CCA660037FC08 /* mobildevSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF8733F02E4CC5570037FC08 /* mobildevSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mobildevSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8733FB2E4CC5570037FC08 /* mobildevSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mobildevSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF87342C2E4CC9800037FC08 /* SDKMobildevApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKMobildevApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8734412E4CC9810037FC08 /* SDKMobildevAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKMobildevAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF87344B2E4CC9810037FC08 /* SDKMobildevAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKMobildevAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FF8734532E4CC9810037FC08 /* Exceptions for "SDKMobildevApp" folder in "SDKMobildevApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FF87342B2E4CC9800037FC08 /* SDKMobildevApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FF8733F22E4CC5570037FC08 /* mobildevSDK */ = {
@@ -34,6 +84,24 @@
 		FF8733FF2E4CC5570037FC08 /* mobildevSDKTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = mobildevSDKTests;
+			sourceTree = "<group>";
+		};
+		FF87342D2E4CC9800037FC08 /* SDKMobildevApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FF8734532E4CC9810037FC08 /* Exceptions for "SDKMobildevApp" folder in "SDKMobildevApp" target */,
+			);
+			path = SDKMobildevApp;
+			sourceTree = "<group>";
+		};
+		FF8734442E4CC9810037FC08 /* SDKMobildevAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SDKMobildevAppTests;
+			sourceTree = "<group>";
+		};
+		FF87344E2E4CC9810037FC08 /* SDKMobildevAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SDKMobildevAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -54,6 +122,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF8734292E4CC9800037FC08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF87345E2E4CCA660037FC08 /* mobildevSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF87343E2E4CC9810037FC08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8734482E4CC9810037FC08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +152,10 @@
 			children = (
 				FF8733F22E4CC5570037FC08 /* mobildevSDK */,
 				FF8733FF2E4CC5570037FC08 /* mobildevSDKTests */,
+				FF87342D2E4CC9800037FC08 /* SDKMobildevApp */,
+				FF8734442E4CC9810037FC08 /* SDKMobildevAppTests */,
+				FF87344E2E4CC9810037FC08 /* SDKMobildevAppUITests */,
+				FF87345D2E4CCA660037FC08 /* Frameworks */,
 				FF8733F12E4CC5570037FC08 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,8 +165,18 @@
 			children = (
 				FF8733F02E4CC5570037FC08 /* mobildevSDK.framework */,
 				FF8733FB2E4CC5570037FC08 /* mobildevSDKTests.xctest */,
+				FF87342C2E4CC9800037FC08 /* SDKMobildevApp.app */,
+				FF8734412E4CC9810037FC08 /* SDKMobildevAppTests.xctest */,
+				FF87344B2E4CC9810037FC08 /* SDKMobildevAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FF87345D2E4CCA660037FC08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +238,76 @@
 			productReference = FF8733FB2E4CC5570037FC08 /* mobildevSDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FF87342B2E4CC9800037FC08 /* SDKMobildevApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8734542E4CC9810037FC08 /* Build configuration list for PBXNativeTarget "SDKMobildevApp" */;
+			buildPhases = (
+				FF8734282E4CC9800037FC08 /* Sources */,
+				FF8734292E4CC9800037FC08 /* Frameworks */,
+				FF87342A2E4CC9800037FC08 /* Resources */,
+				FF8734622E4CCA660037FC08 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8734612E4CCA660037FC08 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF87342D2E4CC9800037FC08 /* SDKMobildevApp */,
+			);
+			name = SDKMobildevApp;
+			packageProductDependencies = (
+			);
+			productName = SDKMobildevApp;
+			productReference = FF87342C2E4CC9800037FC08 /* SDKMobildevApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF8734402E4CC9810037FC08 /* SDKMobildevAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8734572E4CC9810037FC08 /* Build configuration list for PBXNativeTarget "SDKMobildevAppTests" */;
+			buildPhases = (
+				FF87343D2E4CC9810037FC08 /* Sources */,
+				FF87343E2E4CC9810037FC08 /* Frameworks */,
+				FF87343F2E4CC9810037FC08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8734432E4CC9810037FC08 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF8734442E4CC9810037FC08 /* SDKMobildevAppTests */,
+			);
+			name = SDKMobildevAppTests;
+			packageProductDependencies = (
+			);
+			productName = SDKMobildevAppTests;
+			productReference = FF8734412E4CC9810037FC08 /* SDKMobildevAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF87344A2E4CC9810037FC08 /* SDKMobildevAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF87345A2E4CC9810037FC08 /* Build configuration list for PBXNativeTarget "SDKMobildevAppUITests" */;
+			buildPhases = (
+				FF8734472E4CC9810037FC08 /* Sources */,
+				FF8734482E4CC9810037FC08 /* Frameworks */,
+				FF8734492E4CC9810037FC08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF87344D2E4CC9810037FC08 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FF87344E2E4CC9810037FC08 /* SDKMobildevAppUITests */,
+			);
+			name = SDKMobildevAppUITests;
+			packageProductDependencies = (
+			);
+			productName = SDKMobildevAppUITests;
+			productReference = FF87344B2E4CC9810037FC08 /* SDKMobildevAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +323,17 @@
 					};
 					FF8733FA2E4CC5570037FC08 = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					FF87342B2E4CC9800037FC08 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					FF8734402E4CC9810037FC08 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FF87342B2E4CC9800037FC08;
+					};
+					FF87344A2E4CC9810037FC08 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = FF87342B2E4CC9800037FC08;
 					};
 				};
 			};
@@ -168,6 +353,9 @@
 			targets = (
 				FF8733EF2E4CC5570037FC08 /* mobildevSDK */,
 				FF8733FA2E4CC5570037FC08 /* mobildevSDKTests */,
+				FF87342B2E4CC9800037FC08 /* SDKMobildevApp */,
+				FF8734402E4CC9810037FC08 /* SDKMobildevAppTests */,
+				FF87344A2E4CC9810037FC08 /* SDKMobildevAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +369,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FF8733F92E4CC5570037FC08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF87342A2E4CC9800037FC08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF87343F2E4CC9810037FC08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8734492E4CC9810037FC08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -204,6 +413,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF8734282E4CC9800037FC08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF87343D2E4CC9810037FC08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8734472E4CC9810037FC08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -211,6 +441,21 @@
 			isa = PBXTargetDependency;
 			target = FF8733EF2E4CC5570037FC08 /* mobildevSDK */;
 			targetProxy = FF8733FD2E4CC5570037FC08 /* PBXContainerItemProxy */;
+		};
+		FF8734432E4CC9810037FC08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF87342B2E4CC9800037FC08 /* SDKMobildevApp */;
+			targetProxy = FF8734422E4CC9810037FC08 /* PBXContainerItemProxy */;
+		};
+		FF87344D2E4CC9810037FC08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF87342B2E4CC9800037FC08 /* SDKMobildevApp */;
+			targetProxy = FF87344C2E4CC9810037FC08 /* PBXContainerItemProxy */;
+		};
+		FF8734612E4CCA660037FC08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF8733EF2E4CC5570037FC08 /* mobildevSDK */;
+			targetProxy = FF8734602E4CCA660037FC08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -459,6 +704,141 @@
 			};
 			name = Release;
 		};
+		FF8734552E4CC9810037FC08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SDKMobildevApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burakturhan.SDKMobildevApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF8734562E4CC9810037FC08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SDKMobildevApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burakturhan.SDKMobildevApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF8734582E4CC9810037FC08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burakturhan.SDKMobildevAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDKMobildevApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SDKMobildevApp";
+			};
+			name = Debug;
+		};
+		FF8734592E4CC9810037FC08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burakturhan.SDKMobildevAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDKMobildevApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SDKMobildevApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF87345B2E4CC9810037FC08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burakturhan.SDKMobildevAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDKMobildevApp;
+			};
+			name = Debug;
+		};
+		FF87345C2E4CC9810037FC08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.burakturhan.SDKMobildevAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDKMobildevApp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -485,6 +865,33 @@
 			buildConfigurations = (
 				FF8734082E4CC5580037FC08 /* Debug */,
 				FF8734092E4CC5580037FC08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8734542E4CC9810037FC08 /* Build configuration list for PBXNativeTarget "SDKMobildevApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8734552E4CC9810037FC08 /* Debug */,
+				FF8734562E4CC9810037FC08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF8734572E4CC9810037FC08 /* Build configuration list for PBXNativeTarget "SDKMobildevAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF8734582E4CC9810037FC08 /* Debug */,
+				FF8734592E4CC9810037FC08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF87345A2E4CC9810037FC08 /* Build configuration list for PBXNativeTarget "SDKMobildevAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF87345B2E4CC9810037FC08 /* Debug */,
+				FF87345C2E4CC9810037FC08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
